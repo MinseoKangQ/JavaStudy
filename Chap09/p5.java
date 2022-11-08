@@ -16,16 +16,16 @@ public class p5 extends JFrame { // JFrame 상속받기
 		GridLayout grid = new GridLayout(4, 4); // 4행 4열의 Grid 배치관리자
 		
 		Container c = getContentPane(); // 컨텐트팬 받기
-		c.setLayout(grid); // 배치관리자 grid로 설정 
-		
+		c.setLayout(grid); // 배치관리자 grid로 설정
+
+		// 색을 배열로
+		Color[] color = { Color.RED, Color.ORANGE, Color.YELLOW, Color.GREEN, 
+					    Color.CYAN, Color.BLUE, Color.MAGENTA, Color.GRAY, 
+					    Color.PINK, Color.LIGHT_GRAY, Color.WHITE, Color.DARK_GRAY,
+				        Color.YELLOW, Color.GRAY, Color.BLUE, Color.RED };
+
 		// JLabel 생성, 배경색 설정, 부착
 		for(int i=0; i<16; i++) { 
-			
-			// 색을 배열로
-			Color[] color = { Color.RED, Color.ORANGE, Color.YELLOW, Color.GREEN, 
-					        Color.CYAN, Color.BLUE, Color.MAGENTA, Color.GRAY, 
-					        Color.PINK, Color.LIGHT_GRAY, Color.WHITE, Color.DARK_GRAY,
-					        Color.YELLOW, Color.GRAY, Color.BLUE, Color.RED };
 			
 			// 해당 숫자를 문자열로, JLabel 내부 숫자로 설정
 			String text = Integer.toString(i);
